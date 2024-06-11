@@ -6,6 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
+    "deploy": "ng build --configuration production --base-href https://MiloosN5.github.io/FrontendMentor_RecipePageMain/",
     "test": "ng test"
   },
   "private": true,
