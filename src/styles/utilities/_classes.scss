@@ -1,0 +1,19 @@
+@use 'sass:map';
+@use '../utilities/mixins' as m;
+
+@include m.breakpoint-up('mobile') {
+    .colspan2 {
+        grid-column: span 2;
+    }
+}
+
+.text {
+    &--semibold {
+        @extend .text;
+        font-weight: 600;
+    }
+    &--bold {
+        @extend .text;
+        font-weight: 700;
+    }
+}

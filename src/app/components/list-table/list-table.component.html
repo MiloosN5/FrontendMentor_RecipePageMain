@@ -1,0 +1,15 @@
+<ng-container [ngSwitch]="listType">
+  <ul 
+    *ngSwitchCase="'nutrition'" 
+    class="list--table"
+  >
+    <li *ngFor="let item of nutritionItems; let i = index">
+      <span>{{item.title}}</span>
+      <span class="text--semibold">{{item.content}}</span>
+      <app-divider-list 
+        *ngIf="i != nutritionItems.length-1" 
+        class="colspan2"
+      ></app-divider-list>
+    </li>
+  </ul>
+</ng-container>

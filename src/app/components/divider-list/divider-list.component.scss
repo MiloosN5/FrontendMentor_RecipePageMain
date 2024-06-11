@@ -1,0 +1,14 @@
+@use 'sass:map';
+@use '../../../styles/utilities/mixins' as m;
+@use '../../../styles/utilities/functions' as f;
+@use '../../../styles/utilities/variables' as v;
+
+.divider {
+    &--list {
+        @include m.dimensions(
+            $width: 100%, 
+            $height: f.rem(1)
+        );
+        background-color: map-get(v.$colors, 'color-lightGrey');
+    }
+}

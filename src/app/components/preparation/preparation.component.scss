@@ -1,0 +1,27 @@
+@use '../../../styles/utilities/functions' as f;
+@use '../../../styles/utilities/mixins' as m;
+
+.preparation-time {
+    @include m.section-standard;
+    // Override
+        @include m.paddings(
+            $padding-inline: 'pi-section', 
+            $padding-block: f.fluidValue(
+                $min-width: 478, 
+                $max-width: 768, 
+                $size-min: 12, 
+                $size-max: 10
+            ),
+            $desktop-padding-inline: 'pi-section--desktop', 
+            $desktop-padding-block: f.fluidValue(
+                $min-width: 478, 
+                $max-width: 768, 
+                $size-min: 12, 
+                $size-max: 10
+            ),
+        );
+    &__accent {
+        @include m.section-accent;
+    }
+}
+

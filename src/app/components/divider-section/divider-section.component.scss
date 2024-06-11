@@ -1,0 +1,25 @@
+@use 'sass:map';
+@use '../../../styles/utilities/mixins' as m;
+@use '../../../styles/utilities/functions' as f;
+@use '../../../styles/utilities/variables' as v;
+
+.divider {
+    &--section {
+        @include m.dimensions(
+            $width: calc(100% - (f.fluidValue(
+                $min-width: 200, 
+                $max-width: 320, 
+                $size-min: 16, 
+                $size-max: 32
+            ) * 2)), 
+            $height: f.rem(1), 
+            $desktop-width: calc(100% - f.rem(80))
+        );
+        @include m.margins(
+            $margin-inline: auto, 
+            $margin-block: f.rem(12), 
+            $desktop-margin-block: f.rem(10)
+        );
+        background-color: map-get(v.$colors, 'color-lightGrey');
+    }
+}

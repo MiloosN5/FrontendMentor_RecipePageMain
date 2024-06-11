@@ -1,0 +1,10 @@
+<ng-container [ngSwitch]="listType">
+  <ol 
+    *ngSwitchCase="'instructions'" 
+    [ngClass]="['list--ordered', listStyle]"
+  >
+    <li *ngFor="let item of instructionsItems">
+      <span class="text--bold">{{item.title}}</span>: {{item.content}}
+    </li>
+  </ol>
+</ng-container>

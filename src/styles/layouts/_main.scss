@@ -1,0 +1,20 @@
+@use 'sass:map';
+@use '../utilities/mixins' as m;
+@use '../utilities/functions' as f;
+@use '../utilities/variables' as v;
+
+main {
+    @include m.flexbox($direction: column);
+    @include m.margins(
+        $margin-inline: auto, 
+        $desktop-margin-block: f.rem(124)
+    );
+    @include m.dimensions(
+        $width: 100%, 
+        $max-width: f.rem(734)
+    );
+    @include m.border($desktop-border-radius: 'br-standard');
+    background-color: map-get(v.$colors, 'color-white');
+    color: map-get(v.$colors, 'color-darkCharcoal');
+}
+
