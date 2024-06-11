@@ -4,9 +4,9 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod --base-href  https://miloosn5.github.io/FrontendMentor_RecipePageMain/",
+    "build": "ng build --configuration production --base-href  https://miloosn5.github.io/FrontendMentor_RecipePageMain/",
     "watch": "ng build --watch --configuration development",
-    "deploy": "gh-pages -d dist",
+    "deploy": "gh-pages -d dist\\recipe-page-main\\browser",
     "test": "ng test"
   },
   "private": true,
