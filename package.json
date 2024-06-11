@@ -4,10 +4,11 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --configuration production --base-href  https://miloosn5.github.io/FrontendMentor_RecipePageMain/",
+    "build": "ng build --configuration production --base-href /FrontendMentor_RecipePageMain/",
     "watch": "ng build --watch --configuration development",
-    "deploy": "gh-pages -d dist\\recipe-page-main\\browser",
-    "test": "ng test"
+    "deploy": "gh-pages -d dist/recipe-page-main/browser",
+    "test": "ng test",
+    "clean": "rimraf dist"
   },
   "private": true,
   "dependencies": {
@@ -40,6 +41,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "rimraf": "^5.0.7",
     "typescript": "~5.2.2"
   }
 }
