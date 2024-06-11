@@ -6,7 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "deploy": "gh-pages -d dist\\recipe-page-main\\browser",
+    "deploy": "gh-pages -d dist\\browser",
     "test": "ng test"
   },
   "private": true,
