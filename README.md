@@ -32,7 +32,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
         <img src="./src/solution_images/solution_desktop.png" width="auto" height="400px" src="solution on desktop view"/>
     </div>
     <figcaption style="flex:1;width:100;font-style:italic">
-        My solution for mobile (first four images) and mobile (last photo) devices
+        My solution for mobile (first four images) and desktop (last photo) devices
     </figcaption>
 </figure>
 
